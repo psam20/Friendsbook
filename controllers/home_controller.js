@@ -1,6 +1,10 @@
 // Our controller is a set of diffrent actions 
 
+// Views template are renderes into controllers file.
+
 module.exports.home=function(req,res){
-    // In return statement we dont use semicolon .
-    return res.end('<h1>Express is Up for Friendsbook </h1>')
+    // In res.end  we dont use semicolon .
+    return res.render('home',{
+        title : "Welcome to FriendsBook"
+    });
 }
